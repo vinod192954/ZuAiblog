@@ -1,0 +1,4 @@
+GET http://localhost:3007/posts 
+
+### 
+GET http://localhost:3007/detailedPosts/10
