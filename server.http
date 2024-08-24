@@ -2,3 +2,29 @@ GET http://localhost:3007/posts
 
 ### 
 GET http://localhost:3007/detailedPosts/10
+
+###
+POST http://localhost:3007/posts 
+Content-Type: application/json 
+
+{
+    "title":"Exploring the basics of Javascript",
+    "excerpt":"A Beginners guide to understanding Javascript fundamentals",
+    "content":"Javascript is versatile language used for web developement.",
+    "author" :"A.Vinod",
+    "publish_date":"12/03/2023",
+    "detailed_content":"Javascript is runs on the browser that browser will be acts as engine."
+}
+
+### 
+PUT http://localhost:3007/posts/11 
+Content-Type: application/json 
+
+{
+   "title": "Understanding JavaScript Closures",
+  "excerpt": "An in-depth look at closures in JavaScript and how they work.",
+  "content": "JavaScript closures are a fundamental concept that allows functions to retain access to variables from their scope, even after the function has finished executing. This enables powerful patterns like data hiding and function factories."
+}
+
+### 
+DELETE  http://localhost:3007/posts/11 
