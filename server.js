@@ -1,12 +1,12 @@
-const { error } = require('console')
-const { create } = require('domain')
 const express = require('express')
+const cors = require('cors')
 const path= require('path')
 const {open} = require('sqlite')
 const sqlite3 = require('sqlite3')
 const app=express()
 const dbPath = path.join(__dirname,'blogsData.db')
 let db = null
+app.use(cors())
 app.use(express.json())
 
 const initializeDBAndServer =async ()=>{
