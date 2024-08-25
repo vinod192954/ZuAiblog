@@ -111,7 +111,7 @@ app.delete("/posts/:blogId",async(request,response)=>{
          response.status(200).send({message:"Blog post deleted successfully"})
         }
         else{
-         response.status(404).send({message:"Blog post not found"})
+         response.status(404).send({message:"Blog post cannot found"})
         }
 
     }catch{
