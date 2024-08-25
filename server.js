@@ -108,7 +108,7 @@ app.delete("/posts/:blogId",async(request,response)=>{
         const dbResponse = await db.run(deleteBlogQuer,[blogId])
          
         if (dbResponse.changes!==0){
-         response.status(200).send({message:"Blog post deleted successfully"})
+         response.status(200).send({message:"Blog Item deleted successfully"})
         }
         else{
          response.status(404).send({message:"Blog post cannot found"})
